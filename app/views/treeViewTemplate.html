@@ -1,15 +1,5 @@
 <div>
 
-  <!-- Checkbox -->
-<!--   <span class="glyphicon"
-    ng-class="{'glyphicon-unchecked': !node.isChecked(), 'glyphicon-check': node.isChecked()}"
-    ng-click="node.checkClicked(!node.checked)">
-
-    ng-class="{'glyphicon-unchecked': node.getCheckedStatus() === 'unchecked', 'glyphicon-check': node.getCheckedStatus() == 'someChecked'}"
-
-  </span>
- -->
-
   <span class="glyphicon"
     ng-class="{
       'glyphicon-unchecked': node.getCheckedStatus() === 'unchecked',
@@ -18,12 +8,6 @@
     }"
     ng-click="node.checkClicked(!node.checked)">
   </span>
-  <!-- <span class="glyphicon"
-    ng-class="{
-      'glyphicon-unchecked': node.getCheckedStatus() === 'someChecked'
-    }"
-    ng-click="node.checkClicked(!node.checked)">
-  </span> -->
 
   <!-- Folder icon -->
   <span class="glyphicon" ng-if="node.type == 'folder'"
