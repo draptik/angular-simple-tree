@@ -10,6 +10,7 @@
 # Current version
 
 `npm -v && grunt --version && yo --version`
+
 1.3.17
 grunt-cli v0.1.11
 grunt v0.4.1
