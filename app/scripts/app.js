@@ -10,12 +10,8 @@ angular.module('frontendApp', [
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/login.html',
-        controller: 'LoginCtrl'
-      })
-      .when('/login', {
-        templateUrl: 'views/login.html',
-        controller: 'LoginCtrl'
+        templateUrl: 'views/myFileTree.html',
+        controller: 'MyFileTreeCtrl'
       })
       .when('/myFileTree', {
         templateUrl: 'views/myFileTree.html',

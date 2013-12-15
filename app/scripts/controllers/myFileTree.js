@@ -68,8 +68,6 @@ TreeNode.FILE = 'file';
 angular.module('frontendApp')
   .controller('MyFileTreeCtrl', function ($scope) {
 
-    $scope.dummy = 'Hi from Angular FileTreeController!';
-
     var treeSmaller = new TreeNode('Root', TreeNode.FILE);
 
     var treeSmall = new TreeNode('Root', TreeNode.FOLDER, [
