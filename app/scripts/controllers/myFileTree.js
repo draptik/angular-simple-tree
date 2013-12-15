@@ -25,7 +25,7 @@ var TreeNode = function(name, type, children) {
   this.getCheckedStatus = function() {
     var result;
 
-    var areAllChecked = this.areAllChildrenChecked(this);
+    var areAllChecked = this.areAllChildrenChecked();
     if (areAllChecked) {
       result = 'allChecked';
     } else {
@@ -45,13 +45,13 @@ var TreeNode = function(name, type, children) {
     return result;
   };
 
-  this.areAllChildrenChecked = function (node) {
+  this.areAllChildrenChecked = function () {
     var result = this.checked;
-    if (node && node.children) {
+    if (this.children) {
       var allChecked = true; // <-- 'angular.forEach' doesn't have a 'break' statement
-      angular.forEach(node.children, function (child) {
+      angular.forEach(this.children, function (child) {
         if (allChecked) {
-          result = child.areAllChildrenChecked(child);
+          result = child.areAllChildrenChecked();
           if (!result) {
             allChecked = false; // <-- this is our 'break' condition
           }
