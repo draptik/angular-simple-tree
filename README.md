@@ -21,3 +21,7 @@ grunt v0.4.1
 # Thanks
 
 Thanks to Sascha Ißbrücker for getting me started.
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/draptik/angular-simple-tree/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
